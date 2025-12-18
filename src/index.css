@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Calm Blue palette (soft sky / blue) */
+  --border: 210 20% 95%;        /* very light neutral */
+  --input: 210 20% 98%;
+  --ring: 207 90% 60%;          /* bright sky ring */
+  --background: 210 90% 99%;    /* very pale sky background */
+  --foreground: 216 12% 12%;    /* deep navy for text */
+  --primary: 207 85% 45%;       /* calm sky blue */
+  --primary-foreground: 0 0% 100%;
+  --card: 0 0% 100%;
+  --card-foreground: 220 13% 18%;
+  --radius: 0.5rem;
+  --home-bg: #f3f8ff;           /* pale sky hero */
+  /* Ensure destructive/success map to non-red colors to avoid red wordings */
+  --destructive: 210 12% 18%;
+  --destructive-foreground: 0 0% 100%;
+  --success: 145 60% 35%;
+  --success-foreground: 0 0% 100%;
+  /* Muted text/colors (avoid red tones) */
+  --muted: 210 20% 96%;
+  --muted-foreground: 214 12% 50%;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: rgb(var(--background));
+  color: rgb(var(--foreground));
+  font-family: 'Poppins', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+/* Small helpers used by pages */
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.card {
+  background: rgb(var(--card));
+  color: rgb(var(--card-foreground));
+  border-radius: var(--radius);
+  padding: 1rem;
+}
