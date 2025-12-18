@@ -4,71 +4,51 @@
 
 **URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
 
-## How can I edit this code?
+# Quiz Project
 
-There are several ways of editing your application.
+A React + TypeScript quiz application built with Vite, Tailwind CSS and shadcn-ui.
 
-**Use Lovable**
+## Overview
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+This repository contains a web app for creating, taking, and reviewing quizzes. It includes pages for authentication, quiz creation, listing quizzes, taking a quiz, and viewing results.
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
+## Technologies
 
 - Vite
 - TypeScript
 - React
-- shadcn-ui
 - Tailwind CSS
+- shadcn-ui
 
-## How can I deploy this project?
+## Local development
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Prerequisites: Node.js (v16+) and npm or pnpm.
 
-## Can I connect a custom domain to my Lovable project?
+Install dependencies and run the dev server:
 
-Yes, you can!
+```bash
+npm install
+npm run dev
+```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Build for production:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+```bash
+npm run build
+npm run preview
+```
+
+## Project structure
+
+- `src/` — application source code
+- `src/components/` — UI components
+- `src/pages/` — page views (Auth, CreateQuiz, TakeQuiz, Results, etc.)
+
+## Contributing
+
+Feel free to open issues or pull requests. For local changes, create a branch, commit, and push to your fork or a feature branch.
+
+## License
+
+This project does not include a license file — add one if you plan to open-source this repository.
 
