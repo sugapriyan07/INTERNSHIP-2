@@ -204,8 +204,6 @@ You can deploy the built site to static hosts like Vercel, Netlify, or GitHub Pa
 2. Set publish directory to `dist` (Vite's default output)
 3. Add any necessary environment variables in the host settings
 
-If you want, I can add a GitHub Actions workflow to build and deploy on push.
-
 ## Contributing
 
 1. Fork the repository
